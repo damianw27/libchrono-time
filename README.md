@@ -33,7 +33,7 @@ yarn add @libchrono/time
 ```typescript
 const { convertMeridiemToMilitary } = require('@libchrono/time');
 // or using ES Modules
-import { convertMeridiemToMilitary } from 'time-converter-js';
+import { convertMeridiemToMilitary } from '@libchrono/time';
 
 console.log(convertMeridiemToMilitary('10:00 AM')); // result: 10:00
 ```
