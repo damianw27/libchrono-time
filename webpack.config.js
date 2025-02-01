@@ -3,7 +3,6 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
-
 module.exports = {
   context: __dirname,
   entry: path.resolve(__dirname, 'src', 'index.ts'),
@@ -13,19 +12,13 @@ module.exports = {
     filename: 'index.js',
     globalObject: 'this',
     library: {
-      name: 'libchrono',
+      name: 'libchrono-time',
       type: 'umd',
     },
   },
   resolve: {
     extensions: ['.ts', '.js', '.json'],
-    plugins: [
-      new TSConfigPathsPlugin(),
-    ],
-    fallback: {
-      util: require.resolve("util/"),
-      assert: require.resolve("assert/")
-    }
+    plugins: [new TSConfigPathsPlugin()],
   },
   module: {
     rules: [
@@ -35,17 +28,15 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
-              configFile: 'tsconfig.json'
-            }
-          }
+              configFile: 'tsconfig.json',
+            },
+          },
         ],
         exclude: /node_modules/,
       },
     ],
   },
-  plugins: [
-    new ESLintPlugin(),
-  ],
+  plugins: [new ESLintPlugin()],
   optimization: {
     minimize: true,
     minimizer: [

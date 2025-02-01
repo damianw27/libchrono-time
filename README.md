@@ -1,6 +1,6 @@
 # 🕒 @libchrono/time
 
-[![npm version](https://badge.fury.io/js/%40libchrono%2Ftime.svg)](https://badge.fury.io/js/%40libchrono%2Ftime)
+[![npm version](https://badge.fury.io/js/@libchrono%2Ftime.svg)](https://badge.fury.io/js/@libchrono%2Ftime)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 ![](coverage/badge.svg)
 
@@ -33,7 +33,7 @@ yarn add @libchrono/time
 ```typescript
 const { convertMeridiemToMilitary } = require('@libchrono/time');
 // or using ES Modules
-import { convertMeridiemToMilitary } from 'time-converter-js';
+import { convertMeridiemToMilitary } from '@libchrono/time';
 
 console.log(convertMeridiemToMilitary('10:00 AM')); // result: 10:00
 ```
