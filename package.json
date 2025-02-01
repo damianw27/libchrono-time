@@ -10,7 +10,7 @@
   "author": "Damian Wileński",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/damianw27/libchrono.git"
+    "url": "https://github.com/damianw27/libchrono-time.git"
   },
   "keywords": [
     "duration",
