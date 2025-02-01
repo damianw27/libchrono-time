@@ -1,0 +1,8 @@
+/src
+/node_modules
+.prettierrc.json
+eslint.config.json
+.gitignore
+jsdoc.json
+webpack.config.js
+yarn.lock
