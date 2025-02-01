@@ -57,6 +57,12 @@ export const convertCivilToMilitary = convertMeridiemToMilitary;
 export const convert12To24 = convertMeridiemToMilitary;
 
 /**
+ * Converts 12-hour (meridiem) time string to 24-hour (military) time string.
+ * Alias for {@link convertMeridiemToMilitary}.
+ */
+export const toMilitary = convertMeridiemToMilitary;
+
+/**
  * Assembly the 12-hour (meridiem) time string.
  * @param hour Hours (1-12)
  * @param minute Minutes (0-59)
@@ -96,3 +102,5 @@ export const convertMilitaryToCivil = convertMilitaryToMeridiem;
  * Alias for {@link convertMilitaryToMeridiem}.
  */
 export const convert24To12 = convertMilitaryToMeridiem;
+
+export const toMeridiem = convertMilitaryToMeridiem;

@@ -5,6 +5,8 @@ import {
   convertMeridiemToMilitary,
   convertMilitaryToCivil,
   convertMilitaryToMeridiem,
+  toMeridiem,
+  toMilitary,
 } from '$/converters';
 
 describe('converters', () => {
@@ -24,9 +26,10 @@ describe('converters', () => {
       expect(convertMeridiemToMilitary(input)).toBe(expected);
       expect(convertCivilToMilitary(input)).toBe(expected);
       expect(convert12To24(input)).toBe(expected);
+      expect(toMilitary(input)).toBe(expected);
     });
 
-    it.each([
+    const invalidCases = [
       ['24:00 AM', 'Provided invalid format to convert: 24:00 AM'],
       ['13:00 AM', 'Provided invalid format to convert: 13:00 AM'],
       ['12:60 AM', 'Provided invalid format to convert: 12:60 AM'],
@@ -34,10 +37,13 @@ describe('converters', () => {
       ['AM 12:00', 'Provided invalid format to convert: AM 12:00'],
       ['PM 12:00', 'Provided invalid format to convert: PM 12:00'],
       ['', 'Provided invalid format to convert: '],
-    ])('throws error for %s', (input, expectedError) => {
+    ];
+
+    it.each(invalidCases)('throws error for %s', (input, expectedError) => {
       expect(() => convertMeridiemToMilitary(input)).toThrow(expectedError);
       expect(() => convertCivilToMilitary(input)).toThrow(expectedError);
       expect(() => convert12To24(input)).toThrow(expectedError);
+      expect(() => toMilitary(input)).toThrow(expectedError);
     });
 
     it('handles edge case of midnight', () => {
@@ -46,6 +52,7 @@ describe('converters', () => {
       expect(convertMeridiemToMilitary(input)).toBe(expected);
       expect(convertCivilToMilitary(input)).toBe(expected);
       expect(convert12To24(input)).toBe(expected);
+      expect(toMilitary(input)).toBe(expected);
     });
 
     it('handles edge case of noon', () => {
@@ -54,11 +61,12 @@ describe('converters', () => {
       expect(convertMeridiemToMilitary(input)).toBe(expected);
       expect(convertCivilToMilitary(input)).toBe(expected);
       expect(convert12To24(input)).toBe(expected);
+      expect(toMilitary(input)).toBe(expected);
     });
   });
 
   describe('convertMilitaryToMeridiem', () => {
-    it.each([
+    const validCases = [
       ['00:00', '12:00 AM'],
       ['00:30', '12:30 AM'],
       ['01:00', '01:00 AM'],
@@ -67,23 +75,29 @@ describe('converters', () => {
       ['12:30', '12:30 PM'],
       ['13:00', '01:00 PM'],
       ['23:59', '11:59 PM'],
-    ])('converts %s to %s', (input, expected) => {
+    ];
+
+    it.each(validCases)('converts %s to %s', (input, expected) => {
       expect(convertMilitaryToMeridiem(input)).toBe(expected);
       expect(convertMilitaryToCivil(input)).toBe(expected);
       expect(convert24To12(input)).toBe(expected);
+      expect(toMeridiem(input)).toBe(expected);
     });
 
-    it.each([
+    const invalidCases = [
       ['24:00', 'Provided invalid format to convert: 24:00'],
       ['13:60', 'Provided invalid format to convert: 13:60'],
       ['12:60', 'Provided invalid format to convert: 12:60'],
       ['12:', 'Provided invalid format to convert: 12:'],
       [':59', 'Provided invalid format to convert: :59'],
       ['', 'Provided invalid format to convert: '],
-    ])('throws error for %s', (input, expectedError) => {
+    ];
+
+    it.each(invalidCases)('throws error for %s', (input, expectedError) => {
       expect(() => convertMilitaryToMeridiem(input)).toThrow(expectedError);
       expect(() => convertMilitaryToCivil(input)).toThrow(expectedError);
       expect(() => convert24To12(input)).toThrow(expectedError);
+      expect(() => toMeridiem(input)).toThrow(expectedError);
     });
 
     it('handles edge case of midnight', () => {
@@ -92,6 +106,7 @@ describe('converters', () => {
       expect(convertMilitaryToMeridiem(input)).toBe(expected);
       expect(convertMilitaryToCivil(input)).toBe(expected);
       expect(convert24To12(input)).toBe(expected);
+      expect(toMeridiem(input)).toBe(expected);
     });
 
     it('handles edge case of noon', () => {
@@ -100,6 +115,7 @@ describe('converters', () => {
       expect(convertMilitaryToMeridiem(input)).toBe(expected);
       expect(convertMilitaryToCivil(input)).toBe(expected);
       expect(convert24To12(input)).toBe(expected);
+      expect(toMeridiem(input)).toBe(expected);
     });
   });
 });
