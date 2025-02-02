@@ -1,16 +1,16 @@
 {
   "name": "@libchrono/time",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Small library to handle time format conversion.",
   "main": "dist/index.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
     "dist/"
   ],
   "author": "Damian Wileński",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/damianw27/libchrono-time.git"
+    "url": "git+https://github.com/damianw27/libchrono-time.git"
   },
   "keywords": [
     "time",
@@ -36,11 +36,11 @@
   ],
   "scripts": {
     "build:lib": "webpack && tsc-alias -p tsconfig.json",
-    "build:types": "tsc --emitDeclarationOnly && tsc-alias -p tsconfig.json",
+    "build:types": "tsc -p tsconfig.type.json && tsc-alias -p tsconfig.type.json",
     "build:all": "yarn build:lib && yarn build:types",
     "test": "jest",
     "coverage": "yarn test --coverage && make-coverage-badge",
-    "deploy": "yarn test && yarn build:all && yarn publish",
+    "deploy": "yarn test && yarn build:all && npm publish",
     "docs": "typedoc"
   },
   "devDependencies": {
