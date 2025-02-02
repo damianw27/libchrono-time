@@ -1,6 +1,6 @@
 {
   "name": "@libchrono/time",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Small library to handle time format conversion.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
