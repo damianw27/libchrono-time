@@ -5,3 +5,4 @@ export * from "$type/military-time-components";
 export * from "$/checkers";
 export * from "$/converters";
 export * from "$/extractors";
+export * from "$/generators";

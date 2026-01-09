@@ -7,7 +7,7 @@ import { MilitaryTimeComponents } from '$type/military-time-components';
 
 const HoursMatchIndex = 1;
 const MinutesMatchIndex = 2;
-const PeriodMatchIntex = 3;
+const PeriodMatchIndex = 3;
 
 /**
  * Returns the period type from provided string.
@@ -51,6 +51,6 @@ export const getMeridiemComponents = (value: string): MeridiemTimeComponents => 
   return {
     [TimeComponent.Hour]: parseInt(matchOutput[HoursMatchIndex], 10),
     [TimeComponent.Minute]: parseInt(matchOutput[MinutesMatchIndex], 10),
-    [TimeComponent.Period]: getMeridiemForPeriodMatch(matchOutput[PeriodMatchIntex]),
+    [TimeComponent.Period]: getMeridiemForPeriodMatch(matchOutput[PeriodMatchIndex]),
   };
 };
