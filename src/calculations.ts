@@ -16,7 +16,7 @@ const HourInSeconds = 3600; // 60 min * 60 sec
  */
 const toSeconds = (time: MilitaryTimeComponents): number =>
   time[TimeComponent.Hour] * HourInSeconds +
-  time[TimeComponent.Minute] * MinuteInSeconds;
+  (time[TimeComponent.Minute] + 1) * MinuteInSeconds;
 
 
 /**
