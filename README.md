@@ -77,6 +77,13 @@ console.log(getMeridiemComponents('11:45 PM')); // Output: { hour: 11, minute: 4
 console.log(getMilitaryComponents('23:45')); // Output: { hour: 23, minute: 45 }
 ```
 
+### Get times labels in military format
+
+```ts
+console.log(getMilitaryTimes('00:00', '23:59', 10)) // Output: ['00:00', '00:10', '00:20', ... '23:50']
+console.log(getMeridiemTimes('08:30 AM', '12:00 PM', 30)) // Output: ['08:30 AM', '09:00 AM', '09:30 AM', ..., '12:00 PM']
+```
+
 [Full documentation](./docs/globals.md)
 
 ## 🛠️ Why Use @libchrono/time
