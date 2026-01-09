@@ -30,6 +30,8 @@
 
 ## Functions
 
+- [calculateMeridiemTimeWindowInSec](functions/calculateMeridiemTimeWindowInSec.md)
+- [calculateMilitaryTimeWindowInSec](functions/calculateMilitaryTimeWindowInSec.md)
 - [convertMeridiemToMilitary](functions/convertMeridiemToMilitary.md)
 - [convertMilitaryToMeridiem](functions/convertMilitaryToMeridiem.md)
 - [getMeridiemComponents](functions/getMeridiemComponents.md)

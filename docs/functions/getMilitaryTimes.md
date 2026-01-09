@@ -8,7 +8,7 @@
 
 > **getMilitaryTimes**(`startStr`, `endStr`, `interval`): `string`[]
 
-Defined in: [generators.ts:101](https://github.com/damianw27/libchrono-time/blob/9f429aa26e0b39b409d3ab78980f342c218c9836/src/generators.ts#L101)
+Defined in: [generators.ts:101](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/generators.ts#L101)
 
 Generates a list of times using **24-hour (military) format**.
 
