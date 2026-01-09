@@ -6,7 +6,7 @@
 
 # Enumeration: TimeComponent
 
-Defined in: [type/enum/time-component.ts:4](https://github.com/damianw27/libchrono-time/blob/9f429aa26e0b39b409d3ab78980f342c218c9836/src/type/enum/time-component.ts#L4)
+Defined in: [type/enum/time-component.ts:4](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/enum/time-component.ts#L4)
 
 Enumerator representing components from which the time string is built.
 
@@ -16,7 +16,7 @@ Enumerator representing components from which the time string is built.
 
 > **Hour**: `"hour"`
 
-Defined in: [type/enum/time-component.ts:8](https://github.com/damianw27/libchrono-time/blob/9f429aa26e0b39b409d3ab78980f342c218c9836/src/type/enum/time-component.ts#L8)
+Defined in: [type/enum/time-component.ts:8](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/enum/time-component.ts#L8)
 
 00-23 or 1-12
 
@@ -26,7 +26,7 @@ Defined in: [type/enum/time-component.ts:8](https://github.com/damianw27/libchro
 
 > **Minute**: `"minute"`
 
-Defined in: [type/enum/time-component.ts:12](https://github.com/damianw27/libchrono-time/blob/9f429aa26e0b39b409d3ab78980f342c218c9836/src/type/enum/time-component.ts#L12)
+Defined in: [type/enum/time-component.ts:12](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/enum/time-component.ts#L12)
 
 00-59
 
@@ -36,6 +36,6 @@ Defined in: [type/enum/time-component.ts:12](https://github.com/damianw27/libchr
 
 > **Period**: `"period"`
 
-Defined in: [type/enum/time-component.ts:16](https://github.com/damianw27/libchrono-time/blob/9f429aa26e0b39b409d3ab78980f342c218c9836/src/type/enum/time-component.ts#L16)
+Defined in: [type/enum/time-component.ts:16](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/enum/time-component.ts#L16)
 
 AM or PM
