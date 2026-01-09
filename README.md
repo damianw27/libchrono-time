@@ -84,6 +84,8 @@ console.log(getMilitaryTimes('00:00', '23:59', 10)) // Output: ['00:00', '00:10'
 console.log(getMeridiemTimes('08:30 AM', '12:00 PM', 30)) // Output: ['08:30 AM', '09:00 AM', '09:30 AM', ..., '12:00 PM']
 ```
 
+### Calculate seconds in time window
+
 ```ts
 calculateMilitaryTimeWindowInSec('08:00', '12:00'); // 14400
 calculateMeridiemTimeWindowInSec('8:00 AM', '12:00 PM'); // 14400
