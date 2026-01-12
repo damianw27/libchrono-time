@@ -51,13 +51,23 @@ const calculateTimeWindowInSec = (start: MilitaryTimeComponents, end: MilitaryTi
  * ```
  *
  * @param startStr - Start time in `HH:mm` format.
- * @param endStr - End time in `HH:mm` format.
+ * @param endStr - End time in `HH:mm` format. Accepts 24:00 as valid case to get whole day time.
  * @returns The number of seconds between start and end.
  * @throws {@link Error} If end time is before start time.
  */
 export const calculateMilitaryTimeWindowInSec = (startStr: string, endStr: string): number => {
   const start = getMilitaryComponents(startStr);
-  const end = getMilitaryComponents(endStr);
+  let end: MilitaryTimeComponents;
+
+  if (endStr === '24:00') {
+    end = {
+      [TimeComponent.Hour]: 24,
+      [TimeComponent.Minute]: 0,
+    };
+  } else {
+    end = getMilitaryComponents(startStr);
+  }
+
   return calculateTimeWindowInSec(start, end);
 };
 

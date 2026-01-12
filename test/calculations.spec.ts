@@ -19,6 +19,10 @@ describe('Calculations', () => {
         'End time cant be before start time.'
       );
     });
+
+    it('should return seconds count in day when provided whole range', () => {
+      expect(calculateMilitaryTimeWindowInSec('00:00', '24:00')).toBe(86400);
+    });
   });
 
   describe('#calculateMeridiemTimeWindowInSec', () => {
