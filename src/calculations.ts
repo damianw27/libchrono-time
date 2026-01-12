@@ -65,7 +65,7 @@ export const calculateMilitaryTimeWindowInSec = (startStr: string, endStr: strin
       [TimeComponent.Minute]: 0,
     };
   } else {
-    end = getMilitaryComponents(startStr);
+    end = getMilitaryComponents(endStr);
   }
 
   return calculateTimeWindowInSec(start, end);
