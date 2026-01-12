@@ -8,7 +8,7 @@
 
 > **calculateMilitaryTimeWindowInSec**(`startStr`, `endStr`): `number`
 
-Defined in: [calculations.ts:58](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/calculations.ts#L58)
+Defined in: [calculations.ts:58](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/calculations.ts#L58)
 
 Calculates the time window length in seconds between two **military** time strings (`HH:mm`).
 
@@ -24,7 +24,7 @@ Start time in `HH:mm` format.
 
 `string`
 
-End time in `HH:mm` format.
+End time in `HH:mm` format. Accepts 24:00 as valid case to get whole day time.
 
 ## Returns
 

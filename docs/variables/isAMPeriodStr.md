@@ -8,7 +8,7 @@
 
 > `const` **isAMPeriodStr**: (`value`) => `boolean` = `isPreNoonPeriodStr`
 
-Defined in: [checkers.ts:27](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/checkers.ts#L27)
+Defined in: [checkers.ts:27](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/checkers.ts#L27)
 
 Verifies if provided string is a valid AM period. Alias for [isPreNoonPeriodStr](../functions/isPreNoonPeriodStr.md)
 

@@ -8,7 +8,7 @@
 
 > **calculateMeridiemTimeWindowInSec**(`startStr`, `endStr`): `number`
 
-Defined in: [calculations.ts:79](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/calculations.ts#L79)
+Defined in: [calculations.ts:89](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/calculations.ts#L89)
 
 Calculates the time window length in seconds between two **meridiem** time strings (e.g. `8:00 AM`).
 

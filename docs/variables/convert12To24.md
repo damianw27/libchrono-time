@@ -8,7 +8,7 @@
 
 > `const` **convert12To24**: (`value`) => `string` = `convertMeridiemToMilitary`
 
-Defined in: [converters.ts:57](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/converters.ts#L57)
+Defined in: [converters.ts:57](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/converters.ts#L57)
 
 Converts 12-hour (meridiem) time string to 24-hour (military) time string.
 Alias for [convertMeridiemToMilitary](../functions/convertMeridiemToMilitary.md).

@@ -6,7 +6,7 @@
 
 # Enumeration: DayPeriod
 
-Defined in: [type/enum/meridiem.ts:18](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/enum/meridiem.ts#L18)
+Defined in: [type/enum/meridiem.ts:18](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/type/enum/meridiem.ts#L18)
 
 Enumerator representing periods in 12-hour (meridiem) time. Alias for [Meridiem](Meridiem.md).
 
@@ -16,7 +16,7 @@ Enumerator representing periods in 12-hour (meridiem) time. Alias for [Meridiem]
 
 > **AM**: `"AM"`
 
-Defined in: [type/enum/meridiem.ts:19](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/enum/meridiem.ts#L19)
+Defined in: [type/enum/meridiem.ts:19](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/type/enum/meridiem.ts#L19)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [type/enum/meridiem.ts:19](https://github.com/damianw27/libchrono-ti
 
 > **PM**: `"PM"`
 
-Defined in: [type/enum/meridiem.ts:20](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/enum/meridiem.ts#L20)
+Defined in: [type/enum/meridiem.ts:20](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/type/enum/meridiem.ts#L20)

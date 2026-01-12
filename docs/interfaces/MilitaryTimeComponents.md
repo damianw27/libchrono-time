@@ -6,7 +6,7 @@
 
 # Interface: MilitaryTimeComponents
 
-Defined in: [type/military-time-components.ts:6](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/military-time-components.ts#L6)
+Defined in: [type/military-time-components.ts:6](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/type/military-time-components.ts#L6)
 
 Model representing components of the military time string.
 
@@ -16,7 +16,7 @@ Model representing components of the military time string.
 
 > `readonly` **hour**: `number`
 
-Defined in: [type/military-time-components.ts:7](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/military-time-components.ts#L7)
+Defined in: [type/military-time-components.ts:7](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/type/military-time-components.ts#L7)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [type/military-time-components.ts:7](https://github.com/damianw27/li
 
 > `readonly` **minute**: `number`
 
-Defined in: [type/military-time-components.ts:8](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/type/military-time-components.ts#L8)
+Defined in: [type/military-time-components.ts:8](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/type/military-time-components.ts#L8)

@@ -8,7 +8,7 @@
 
 > **getMeridiemTimes**(`startStr`, `endStr`, `interval`): `string`[]
 
-Defined in: [generators.ts:124](https://github.com/damianw27/libchrono-time/blob/83486c3b0ef7f84ed0222103add988efecbd292c/src/generators.ts#L124)
+Defined in: [generators.ts:124](https://github.com/damianw27/libchrono-time/blob/864173122139e9bb3f370b734f474fcb3afcc140/src/generators.ts#L124)
 
 Generates a list of times using **12-hour (meridiem) format** input.
 
